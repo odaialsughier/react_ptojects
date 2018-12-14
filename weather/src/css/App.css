@@ -1,0 +1,31 @@
+.current , .forecast {
+	width: 70%;
+	margin: auto;
+}
+
+.city-name{
+	font-size:26px;
+	color:grey;
+}
+
+.country-name{
+	font-size:18px;
+}
+
+.current-image{
+	float: left;
+}
+
+.current-text{
+	padding-top: 15px;
+}
+
+.current-status{
+	font-size:26px;
+}
+
+.next-days{
+	float: left;
+	width: 12%;
+	margin-right: 3	%
+}
