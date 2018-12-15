@@ -9,13 +9,20 @@ class Status extends Component {
 		let location={country:'' , region:''};
 		let forecast =[];
 		let next_days_title=''
+		let error=''
 
-		if(this.props.forecast !== null){
-		console.log(this.props.forecast)
+		if(this.props.forecast !== null && this.props.forecast.error == null){
+			console.log(this.props.forecast)
 			current = this.props.forecast.current;
 			location = this.props.forecast.location
 			forecast = this.props.forecast.forecast.forecastday
 			next_days_title ='Next Days Weather'
+			error=''
+		}else{
+
+			if(this.props.forecast !== null)
+				error = this.props.forecast.error.message
+			
 		}
 
 		return (
@@ -64,6 +71,7 @@ class Status extends Component {
 						})
 					}
 				</div>
+				<h2>{error}</h2>
 			</div>
 		);
 	}

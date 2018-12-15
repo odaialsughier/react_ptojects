@@ -7,7 +7,6 @@ import "./css/App.css";
 /* To Do:  
 * - Autocomplete the city name 
 * - multilanguge website
-* - When query doesnot exist it returns an error
 */
 
 

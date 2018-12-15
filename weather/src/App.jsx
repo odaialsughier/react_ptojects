@@ -15,7 +15,7 @@ class App extends Component{
 	search(){
 		const BASE_URL = 'http://api.apixu.com/v1/forecast.json'
 		const api_key = 'e090142467b64f5bab6144216180812'
-		const FETCH_URL =`${BASE_URL}?key=${api_key}&q=${this.state.query}&days=5`
+		const FETCH_URL =`${BASE_URL}?key=${api_key}&q=${this.state.query}&days=7`
 
 		fetch(FETCH_URL,{
 			method: 'GET'
