@@ -8,7 +8,7 @@ import "./css/App.css";
 * - Autocomplete the city name
 * - multilanguge website
 */
-odai
+
 
 
 ReactDom.render(
